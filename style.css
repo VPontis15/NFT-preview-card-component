@@ -93,6 +93,8 @@ body {
 .flex {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -127,6 +129,22 @@ img {
 .flex-row {
   justify-content: space-between;
 }
+
+.child1 {
+  color: var(--clr-text-accent);
+  font-weight: 600;
+  position: relative;
+}
+
+/* .child1:before {
+  content: "";
+  background: url("images/icon-ethereum.svg") no-repeat;
+  position: absolute;
+  left: -15px;
+  top: 0;
+  width: 11px;
+  height: 18px;
+} */
 
 .creator {
   gap: 0.75rem;
