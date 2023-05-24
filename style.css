@@ -123,7 +123,7 @@ img {
 .card__content {
   margin-top: 1rem;
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .flex-row {
@@ -136,22 +136,22 @@ img {
   position: relative;
 }
 
-/* .child1:before {
-  content: "";
-  background: url("images/icon-ethereum.svg") no-repeat;
-  position: absolute;
-  left: -15px;
-  top: 0;
-  width: 11px;
-  height: 18px;
-} */
-
 .creator {
   gap: 0.75rem;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--clr-line);
 }
 
 .creator-img {
   width: 40px;
   border: 1px solid #fff;
   border-radius: 50%;
+}
+
+.creator-name {
+  color: #fff;
 }
