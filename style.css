@@ -79,6 +79,7 @@ h6 {
   --clr-line: hsl(215, 32%, 27%);
   --clr--text-main: hsl(215, 51%, 70%);
   --clr-text-accent: hsl(178, 100%, 50%);
+  --clr-text-accent-hover: hsla(178, 100%, 50%, 0.603);
   /* Font sizes */
   --fs-text-main: 1.125rem;
   --fs-text-heading: 1.25rem;
@@ -105,6 +106,16 @@ body {
   justify-content: space-between;
 }
 
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active:hover {
+  color: var(--clr-text-accent);
+}
+
 /* ------------------ */
 
 .container {
@@ -116,14 +127,31 @@ body {
 .card {
   background-color: var(--clr-card-bg);
   margin: 1.75rem;
-  padding-block: 1.75em;
+  padding: 1.5em;
   border-radius: 1rem;
-  max-width: 400px;
+  max-width: 350px;
 }
 
-.card-container {
-  max-width: 85%;
-  margin-inline: auto;
+.image {
+  position: relative;
+}
+
+.overlay {
+  border-radius: 1rem;
+  inset: 0;
+  position: absolute;
+}
+
+.overlay:hover {
+  background-color: var(--clr-text-accent-hover);
+  display: grid;
+  place-content: center;
+}
+
+.overlay:hover:after {
+  content: url(images/icon-view.svg);
+  width: 48px;
+  height: 48px;
 }
 
 img {
@@ -139,6 +167,7 @@ img {
 .card__content-heading {
   color: #fff;
   font-size: var(--fs-text-heading);
+  margin-top: 1rem;
 }
 
 .child1 {
