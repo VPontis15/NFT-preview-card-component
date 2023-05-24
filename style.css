@@ -170,6 +170,10 @@ a:visited {
   margin-top: 1rem;
 }
 
+.card__content-paragraph {
+  line-height: 1.5;
+}
+
 .child1 {
   color: var(--clr-text-accent);
   font-weight: 600;
