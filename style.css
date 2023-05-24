@@ -1,3 +1,5 @@
+/* CSS Reset by Josh W Comeau   https://www.joshwcomeau.com/css/custom-css-reset/*/
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -79,7 +81,7 @@ h6 {
   --clr-text-accent: hsl(178, 100%, 50%);
   /* Font sizes */
   --fs-text-main: 1.125rem;
-  --fs-text-heading: 2rem;
+  --fs-text-heading: 1.25rem;
   /* Font Family */
   --ff-text-main: "Outfit", sans-serif;
 }
@@ -90,12 +92,20 @@ body {
   font-family: var(--ff-text-main);
 }
 
+/* Utilities */
+
 .flex {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
+
+.flex-row {
+  justify-content: space-between;
+}
+
+/* ------------------ */
 
 .container {
   min-height: 100vh;
@@ -126,8 +136,9 @@ img {
   gap: 1.25rem;
 }
 
-.flex-row {
-  justify-content: space-between;
+.card__content-heading {
+  color: #fff;
+  font-size: var(--fs-text-heading);
 }
 
 .child1 {
