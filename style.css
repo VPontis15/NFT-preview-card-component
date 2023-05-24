@@ -67,3 +67,19 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  /* Colors */
+  --clr-card-bg: hsl(216, 50%, 16%);
+  --clr-main-bg: hsl(217, 54%, 11%);
+  --clr-line: hsl(215, 32%, 27%);
+  --clr--text-main: hsl(215, 51%, 70%);
+  --clr-text-accent: hsl(178, 100%, 50%);
+  /* Font sizes */
+  --fs-text-main: 1.125rem;
+  --fs-text-heading: 2rem;
+  /* Font Family */
+  --ff-text-main: "Outfit", sans-serif;
+}
