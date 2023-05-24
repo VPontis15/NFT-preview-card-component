@@ -117,3 +117,23 @@ body {
 img {
   border-radius: 10px;
 }
+
+.card__content {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.flex-row {
+  justify-content: space-between;
+}
+
+.creator {
+  gap: 0.75rem;
+}
+
+.creator-img {
+  width: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
